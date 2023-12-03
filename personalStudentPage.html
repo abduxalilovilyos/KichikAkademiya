@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="responsive.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.css">
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.9.0/jquery.min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/raphael/2.1.0/raphael-min.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/morris.js/0.5.1/morris.min.js"></script>    
+</head>
+<body>
+    <div class="site">
+        <div class="header">
+            <div class="navbar">
+                <a class="logo" href="homepage.html"><h1>KichikAkademiya</h1></a>
+                <input type="checkbox" name="check" id="check">
+                <label for="check">
+                    <i class="fa-solid fa-bars" id="btn"></i>
+                    <i class="fa-solid fa-xmark" id="cancel" ></i>
+                </label>
+                <ul>
+                    <li><a href="homepage.html">Asosiy</a></li>
+                    <li><a href="students.html">O'quchilar</a></li>
+                    <li><a href="#">Bo'glanish</a></li>
+                </ul>
+            </div>
+        <div class="clear"></div> 
+        
+        <div class="header__contener">
+            <div class="header__text">
+                <h1>Assalomu alekum. Bizning <span>Kichik akademiya</span> platformasiga xush kelibsiz!</h1>
+                <p>Siz bu platforma orqali biz haqimizda bir muncha malumotlarga ega bolasiz</p>
+                <button>Button</button>
+            </div>
+            <img src="./images/img.png" alt="">
+        </div>
+        <div class="clear"></div>
+        </div>
+        <div class="clear"></div>
+        <div class="student__block">
+            <img src="images/img6.png">
+            <div class="studentblock__text">
+                <h1>Abdurahmonov Shukurullo</h1>
+                <h4>10-"A" sinf</h4>
+            </div>
+        </div>
+        <div class="student__statistic">
+            <div class="student__analitic">
+                    <div class="studentstas__text">
+                        <h3>Asosiy fanlar</h3>
+                        <div class="fanlar__text">
+                            <div class="fanlar">
+                                <div class="nuqta"></div>
+                                <h5>Matimatika</h5>
+                            </div>
+                            <div class="fanlar">
+                                <div class="nuqta blue"></div>
+                                <h5>Ingiliz tili</h5>
+                            </div>
+                        </div>
+                    </div>
+                <div id="asosiyFanlar" style="width: 100%;"></div>
+            </div>
+
+            <div class="student__analitic">
+                <div class="studentstas__text">
+                    <h3>Majburiy fanlar</h3>
+                    <div class="fanlar__text">
+                        <div class="fanlar">
+                            <div class="nuqta"></div>
+                            <h5>Matimatika</h5>
+                        </div>
+                        <div class="fanlar">
+                            <div class="nuqta green"></div>
+                            <h5>Tarix</h5>
+                        </div>
+                        <div class="fanlar">
+                            <div class="nuqta blue"></div>
+                            <h5>Ona tili</h5>
+                        </div>
+                    </div>
+                </div>
+            <div id="majburiyFanlar" style="width: 100%;"></div>
+        </div>
+
+        <div class="student__analitic">
+            <div class="studentstas__text">
+                <h3>Natijalar</h3>
+            </div>
+        <div id="natijalar" style="width: 100%;"></div>
+    </div>
+
+
+
+
+
+        </div>
+
+
+        <div class="contact">
+            <h1>Biz bilan bo'glanish</h1>
+            <div class="contact__contener">
+                <img src="images/img4.png">
+                <div class="contact__card">
+                    <form>
+                        <input type="text" placeholder="Ism va familiya">
+                        <input type="number" placeholder="Telefon raqam">
+                        <input type="text" placeholder="Manzilingizni kiriting">
+                    </form>
+                    <button>Jo'natish</button>
+                </div>
+            </div>
+        </div>
+
+        <div class="footer">
+            <div class="footer__card">
+                <h1>KichikAkademiya</h1>
+                <h3>kichikakademiya@gmail.com</h3>
+                <h3>Manzil:Andijon, Paxtaobod, Madaniyat</h3>
+            </div>
+            <ul>
+                <li><a href="#">Asosiy</a></li>
+                <li><a href="#">O'quvchilar</a></li>
+                <li><a href="#">Boglanish</a></li>
+            </ul>
+            <div class="social">
+                <div class="icon"><i class="fa-brands fa-facebook"></i></div>
+                <div class="icon"><i class="fa-brands fa-telegram"></i></div>
+                <div class="icon"><i class="fa-brands fa-instagram"></i></div>
+            </div>
+        </div>
+
+
+    </div>
+
+
+    <script>
+        new Morris.Line({
+  element: 'asosiyFanlar',
+  data: [
+    { data: '2012-09-01', math: 20, english:20 },
+    { data: '2012-10-01', math: 10, english:21 },
+    { data: '2012-11-01', math: 5 , english:29 },
+    { data: '2012-12-01', math: 5 , english:13 },
+    { data: '2013-01-01', math: 20, english:30 }
+  ],
+  xkey: 'data',
+  ykeys: ['math', "english"],
+  labels: ['Matematika', 'Ingliz tili'],
+  lineColors: ["red",'blue']
+});
+
+new Morris.Line({
+  element: 'majburiyFanlar',
+  data: [
+    { data: '2012-09-01', math: 20, history:20, mt:10 },
+    { data: '2012-10-01', math: 10, history:21, mt:10 },
+    { data: '2012-11-01', math: 5 , history:29, mt:1 },
+    { data: '2012-12-01', math: 5 , history:13, mt:7 },
+    { data: '2013-01-01', math: 20, history:30, mt:10 }
+  ],
+  xkey: 'data',
+  ykeys: ['math', "history", 'mt'],
+  labels: ['Matematika', 'Tarix', 'Ona tili'],
+  lineColors: ["red",'green','blue']
+});
+
+new Morris.Bar({
+  element: 'natijalar',
+  data: [
+    { data: '2012-09-01', ball: 20 },
+    { data: '2012-10-01', ball: 10 },
+    { data: '2012-11-01', ball: 5  },
+    { data: '2012-12-01', ball: 5  },
+    { data: '2013-01-01', ball: 20 }
+  ],
+  xkey: 'data',
+  ykeys: ['ball'],
+  labels: ['ball'],
+  lineColors: ["green"]
+});
+    </script>
+</body>
+</html>

@@ -1,0 +1,476 @@
+*
+{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto', sans-serif;
+    box-sizing: border-box;
+}
+:root
+{
+    --greenwhite: #EBFFF3;
+    --green: #28C167;
+    --black: #000000; 
+}
+.site
+{
+    max-width: 1440px;
+    width: 100%;
+    height: auto;
+    margin: auto;
+    border: 1px solid black;
+    overflow-x: hidden;
+}
+.header 
+{
+    width: 100%;
+    background-color: var(--greenwhite);
+    padding: 74px 130px;
+}
+.navbar
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+}
+label #btn, label #cancel
+{
+    position: absolute;
+    top: 50%;
+    right: 30px;
+    font-size: 30px;
+    cursor: pointer;
+    transform: translate(0,-50%);
+    color: var(--green);
+    display: none;
+}
+#check
+{
+    display: none;
+}
+.navbar h1 , .number h3
+{
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;    
+}
+.navbar ul
+{
+    list-style: none;
+    display: flex;
+    gap: 40px;
+}
+.navbar ul li a
+{
+    color: var(--black);
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    text-decoration: none;   
+    border-bottom: 4px solid transparent; 
+}
+.navbar ul li a:hover
+{
+    border-bottom: 4px solid var(--green);
+}
+.number
+{
+    display: flex;
+    gap: 30px;
+    align-items: center;
+}
+.number h3
+{
+    display: block;
+}
+.icon
+{
+    height: 48px;
+    width: 48px;
+    border-radius: 50%;
+    text-align: center;
+    background-color: var(--green);
+}
+.icon i
+{
+    line-height: 48px;
+    color: white;
+    font-size: 24px;
+}
+.clear
+{
+    clear: both;
+}
+.header__contener
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    margin-top: 50px;
+}
+.header__text
+{
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.header__text h1
+{
+    color: var(--black);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 65px; /* 135.417% */    
+}
+.header__text h1 span
+{
+    color: var(--green);
+}
+.header__text p
+{
+    color: #5C5C5C;
+    padding-right: 250px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 175% */    
+}
+.header__text button , .contact__card button
+{
+    width: 160px;
+    height: 60px;
+    border-radius: 8px;
+    background-color: var(--green);
+    color: #FFF;
+    border: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 145.833% */    
+}
+.header__contener img
+{
+    width: 50%;
+}
+.about , .contact , .students
+{
+    width: 100%;
+    padding: 70px 120px;
+}
+.about h1 , .contact h1 , .students h1
+{
+    color: var(--black);
+    text-align: center;
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 50px;
+    line-height: 65px; /* 135.417% */   
+}
+.card1
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.card__title
+{
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+.card__number
+{
+    height: 48px;
+    width: 48px;
+    border: 5px solid var(--green);
+    border-radius: 50%;
+    text-align: center;
+}
+.card__number h3
+{
+    font-size: 30px;
+    color: var(--green);
+    line-height: 40px;
+}
+.card__title h2
+{
+    color: var(--black);
+    font-size: 35px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 65px; /* 185.714% */    
+}
+.card__text p
+{
+    color: #5C5C5C;
+    padding-right: 100px;
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px; /* 175% */  
+    text-shadow: -50px 80px 60px green;  
+}
+.img
+{
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+.img1
+{
+    width: 326px;
+    height: 150px;
+    height: auto;
+    align-self: flex-end;
+}
+.img2
+{
+    width: 490px;
+    height: 235px;
+    height: auto;
+}
+.card2
+{
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: 50px;
+}
+.card2__img .img1
+{
+    align-self: flex-start;
+}
+.card2__text 
+{
+    padding: 0 0 0 100px;
+}
+.card2__text p
+{
+    text-shadow: 50px 60px 60px green;
+}
+.contact__contener
+{
+    display: flex;
+    justify-content: space-between;
+    margin-top: 80px;
+}
+.contact__contener img
+{
+    width: 40%;
+    border-radius: 10px;
+}
+.contact__card
+{
+    max-width: 460px;
+    border-radius: 10px;
+    background: #28332D;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;   
+    padding: 30px 0; 
+}
+.contact__card form
+{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center; 
+}
+.contact__card form input
+{
+    width: 350px;
+    height: 65px;
+    border-radius: 5px;
+    background: #FFF;
+    margin: 7px 100px;      
+    padding: 0 20px ;  
+    font-size: 17px;
+}
+.footer
+{
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    flex-wrap: wrap;
+    background-color: var(--greenwhite);
+    padding: 40px 130px;
+}
+.footer__card
+{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer ul
+{
+    list-style: none;
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+.footer ul li a
+{
+    display: block;
+    color: #000;
+    text-decoration: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;    
+}
+.social
+{
+    display: flex;
+    gap: 20px;
+}
+
+.nav-active
+{
+    display: none;
+}
+.student__contener
+{
+    display: flex;
+    width: 100%;
+    gap: 100px;
+    flex-wrap: wrap;
+    justify-content: space-between;
+}
+.student__card
+{
+    width: 300px;
+    border-radius: 8px;
+    border: 0.5px solid #000;
+    background: var(--greenwhite);
+    gap: 20px;
+    padding: 20px 10px;  
+    position: relative;  
+    overflow: hidden;    
+}
+.student__name , .student__class
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.student__name
+{
+    margin: 20px 0;
+}
+.student__card button
+{
+    width: 120px;
+    height: 50px;
+    border-radius: 8px;
+    background-color: var(--green);
+    color: #FFF;
+    border: none;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 35px;
+    position: absolute;
+    top: 130px;
+    left: 90px;
+    transform: translateY(-185px);
+}
+.student__card:hover button
+{
+    transform: translateY(0px);
+    transition: all 1s;
+}
+.student__statistic
+{
+    width: 100%;
+    padding: 70px 120px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+.student__block
+{
+    display: flex;
+    align-items: center;
+    gap: 30px;
+    padding: 70px 120px;
+}
+.studentblock__text h1
+{
+    color: var(--black);
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 600;
+    margin-bottom: 20px;
+    line-height: 40px; /* 135.417% */    
+}
+.studentblock__text h4
+{
+    color: #ADADAD;
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 30px; /* 125% */    
+}
+
+.student__analitic
+{
+    width: 504px;
+    padding: 25px;
+    background-color: var(--greenwhite);
+    border-radius: 10px;
+    margin-bottom: 80px;
+}
+.studentstas__text
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.studentstas__text h3
+{
+    color: var(--black);
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 40px; /* 133.333% */ 
+}
+.fanlar__text
+{
+    display: flex;
+    gap: 10px;
+}
+.fanlar
+{
+    display: flex;
+    align-items: center;
+    gap: 5px;
+}
+.nuqta
+{
+    height: 8px;
+    width: 8px;
+    border-radius: 50%;
+    background-color: red;
+}
+.blue
+{
+    background-color: blue;
+}
+.green
+{
+    background-color: green;
+}
+.logo
+{
+    text-decoration: none;
+}

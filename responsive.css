@@ -1,0 +1,351 @@
+@media screen and (max-width:1201px) {
+    .site
+    {
+        width: 100%;
+    }
+}
+@media screen and (max-width:1200.98px) and (min-width:1025px) {
+    .site
+    {
+        width: 100%;
+        width: 100vw;
+    }
+    .header
+    {
+        padding: 40px 90px;
+    }
+    .navbar ul
+    {
+        gap: 15px;
+    }
+    .number h3
+    {
+        display: none;
+    }
+    .header__text h1
+    {
+        font-size: 40px;
+        line-height: 50px;
+    }
+    .header__text p
+    {
+        padding-right: 150px;
+    }
+    .about , .contact , .students , .student__block , .student__statistic
+    {
+        padding: 60px 90px;
+    }
+    .img
+    {
+        width: 40%;
+    }
+    .img1
+    {
+        width: 300px;
+        height: auto;
+    }
+    .img2
+    {
+        width: 420px;
+        height: auto;
+    }
+    .card__text p
+    {
+        padding-right: 40px;
+    }
+    .card2__text
+    {
+        padding: 0 0 0 120px;
+    }
+    .student__statistic
+    {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:1024.98px) and (min-width:769px) {
+    .site
+    {
+        width: 100%;
+    }
+    .header
+    {
+        padding: 50px 70px;
+    }
+    .number h3
+    {
+        display: none;
+    }
+    .about , .contact , .students, .student__block , .student__statistic
+    {
+        padding: 50px 70px;
+    }
+    .img
+    {
+        width: 40%;
+    }
+    .img1
+    {
+        width: 210px;
+    }
+    .img2
+    {
+        width: 300px;
+    }
+    .contact__card
+    {
+        max-width: 330px;
+    }
+    .contact__card form input
+    {
+        width: 280px;
+    }
+    .header__text h1
+    {
+        font-size: 37px;
+        line-height: 45px;
+    }
+    .header__text p
+    {
+        padding-right: 50px;
+    }
+    .navbar ul 
+    {
+        gap: 15px;
+    }
+    .card__title h2
+    {
+        font-size: 30px;
+    }
+    .card__text p
+    {
+        padding-right: 20px;
+        line-height: 25px;
+    }
+    .card2__text
+    {
+        padding: 0 0 0 70px;
+    }
+    .footer
+    {
+        padding: 50px;
+    }
+    .student__statistic
+    {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:768.98px) and (min-width:481px) {
+    .site
+    {
+        width: 100%;
+        overflow-x: hidden;
+    }
+    .contact__contener img
+    {
+        display: none;
+    }
+    .card1
+    {
+        flex-direction: column;
+    }
+    .card2
+    {
+        flex-direction: column-reverse;
+    }
+    .number 
+    {
+        display: none;
+    }
+    .header , .about , .contact , .footer , .students, .student__block , .student__statistic
+    {
+        padding: 50px 30px;
+    }
+    .header__contener img
+    {
+        display: none;
+    }
+    .img1
+    {
+        width: 200px;
+    }
+    .img2
+    {
+        width: 320px;
+    }
+    .contact__card
+    {
+        width: 350px;
+        align-items: center;
+        margin-left: 50px;
+    }
+    .contact__card form input
+    {
+        width: 300px;
+    }
+    .footer__card
+    {
+        margin-bottom: 30px;
+    }
+    .social
+    {
+        gap: 10px;
+    }
+    .header__text p
+    {
+        padding-right: 100px;
+    }
+    .header__text h1
+    {
+        font-size: 45px;
+    }
+    .card__text p
+    {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .card2__text
+    {
+        padding: 0;
+    }
+    .student__statistic
+    {
+        justify-content: center;
+    }
+    .studentblock__text h1
+    {
+        font-size: 30px;
+    }
+    .student__analitic
+    {
+        width: 400px;
+    }
+    .studentstas__text
+    {
+        flex-direction: column;
+    }
+    .navbar ul
+    {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 50%;
+        height: 50vh;
+        padding-top: 80px;
+        display: block;
+        line-height: 50px;
+        z-index: 100;
+        background-color: #EBFFF3;   
+        transition: 0.5s;
+    }
+    .navbar ul li 
+    {
+        margin-left: 50px;
+    }
+    .navbar ul li a
+    {
+        font-size: 25px;
+    }
+    label #btn
+    {
+        display: inline-block;
+    }
+    #check:checked ~ ul
+    {
+        right: 0;
+    }
+    #check:checked ~ label #cancel
+    {
+        display: block;
+        z-index: 101;
+    }
+}
+
+@media screen and (max-width:480.98px) and (min-width:0px) {
+    .site
+    {
+        width: 100%;
+    }
+    .contact__contener img
+    {
+        display: none;
+    }
+    .card1
+    {
+        flex-direction: column;
+    }
+    .card2
+    {
+        flex-direction: column-reverse;
+    }
+    .number 
+    {
+        display: none;
+    }
+    .header , .about , .contact , .footer , .students , .student__block , .student__statistic
+    {
+        padding: 50px 30px;
+    }
+    .header__contener img
+    {
+        display: none;
+    }
+    .img1
+    {
+        width: 200px;
+    }
+    .img2
+    {
+        width: 320px;
+    }
+    .contact__card
+    {
+        width: 300px;
+        align-items: center;
+        margin-left: 10px;
+    }
+    .contact__card form input
+    {
+        width: 280px;
+    }
+    .footer__card
+    {
+        margin-bottom: 30px;
+    }
+    .social
+    {
+        gap: 10px;
+    }
+    .header__text p
+    {
+        padding-right: 100px;
+    }
+    .header__text h1
+    {
+        font-size: 45px;
+    }
+    .card__text p
+    {
+        padding-right: 0px;
+        margin-bottom: 30px;
+    }
+    .card2__text
+    {
+        padding: 0;
+    }
+    .student__contener
+    {
+        justify-content: center;
+    }
+    .studentblock__text h1
+    {
+        font-size: 24px;
+    }
+    .student__analitic
+    {
+        width: 100%;
+    }
+    .studentstas__text
+    {
+        flex-direction: column;
+    }
+}
