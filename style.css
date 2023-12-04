@@ -17,7 +17,7 @@
     width: 100%;
     height: auto;
     margin: auto;
-    border: 1px solid black;
+    border: 1px solid transparent;
     overflow-x: hidden;
 }
 .header 
@@ -295,6 +295,7 @@ label #btn, label #cancel
     margin: 7px 100px;      
     padding: 0 20px ;  
     font-size: 17px;
+    outline: none;
 }
 .footer
 {
@@ -394,7 +395,8 @@ label #btn, label #cancel
     width: 100%;
     padding: 70px 120px;
     display: flex;
-    justify-content: space-between;
+    flex-direction: column;
+    justify-content: center;
     flex-wrap: wrap;
 }
 .student__block
@@ -424,7 +426,7 @@ label #btn, label #cancel
 
 .student__analitic
 {
-    width: 504px;
+    width: 80%;
     padding: 25px;
     background-color: var(--greenwhite);
     border-radius: 10px;

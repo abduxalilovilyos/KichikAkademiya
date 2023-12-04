@@ -164,6 +164,10 @@
     {
         display: none;
     }
+    .student__contener
+    {
+        justify-content: center;
+    }
     .img1
     {
         width: 200px;
@@ -217,7 +221,7 @@
     }
     .student__analitic
     {
-        width: 400px;
+        width: 80%;
     }
     .studentstas__text
     {
@@ -311,6 +315,41 @@
     {
         margin-bottom: 30px;
     }
+    .navbar ul
+    {
+        position: fixed;
+        top: 0px;
+        right: -100%;
+        width: 50%;
+        height: 50vh;
+        padding-top: 80px;
+        display: block;
+        line-height: 50px;
+        z-index: 100;
+        background-color: #EBFFF3;   
+        transition: 0.5s;
+    }
+    .navbar ul li 
+    {
+        margin-left: 50px;
+    }
+    .navbar ul li a
+    {
+        font-size: 25px;
+    }
+    label #btn
+    {
+        display: inline-block;
+    }
+    #check:checked ~ ul
+    {
+        right: 0;
+    }
+    #check:checked ~ label #cancel
+    {
+        display: block;
+        z-index: 101;
+    }
     .social
     {
         gap: 10px;
@@ -342,7 +381,7 @@
     }
     .student__analitic
     {
-        width: 100%;
+        width: 90%;
     }
     .studentstas__text
     {
